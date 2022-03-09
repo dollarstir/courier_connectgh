@@ -109,7 +109,7 @@ class HomeState extends State<Home> {
 
           if (_currentindex==2) {
             Navigator.push(context, MaterialPageRoute(builder: (context){
-              return Track();
+              // return Track();
             }),);
             
           }

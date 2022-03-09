@@ -7,12 +7,16 @@ import 'package:hive_flutter/hive_flutter.dart';
 import './home.dart';
 import './getstarted.dart';
 
+
+
+
 void main() async{ 
   WidgetsFlutterBinding.ensureInitialized();
   final dir = await path.getApplicationDocumentsDirectory();
   Hive.init(dir.path);
   await Hive.openBox("dollarbox");
   
+
 
   runApp(MyApp());
 }
